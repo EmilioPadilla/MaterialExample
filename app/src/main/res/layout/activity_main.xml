@@ -1,73 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#14CDDC39"
-    tools:context=".MainActivity">
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#14CDDC39"
+  tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/myText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome!"
-        android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.186" />
+  <TextView
+    android:id="@+id/myText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Welcome!"
+    android:textSize="48sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.186" />
 
-    <Button
-        android:id="@+id/button_submit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="93dp"
-        android:text="Submit"
-        app:backgroundTint="#9C27B0"
-        app:layout_constraintEnd_toEndOf="@+id/myText"
-        app:layout_constraintStart_toStartOf="@+id/myText"
-        app:layout_constraintTop_toBottomOf="@+id/myText"
-        app:icon="@drawable/ic_mood_24px"
-        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+  <Button
+    android:id="@+id/button_submit"
+    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="76dp"
+    android:text="Submit"
+    app:backgroundTint="#9C27B0"
+    app:icon="@drawable/ic_mood_24px"
+    app:layout_constraintEnd_toStartOf="@+id/button_cancel"
 
-        />
+    app:layout_constraintHorizontal_bias="0.613"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
-    <Button
-        android:id="@+id/button_cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
-        android:text="Cancel"
-        app:layout_constraintEnd_toEndOf="@+id/button_submit"
-        app:layout_constraintStart_toStartOf="@+id/button_submit"
-        app:layout_constraintTop_toBottomOf="@+id/button_submit" />
+  <Button
+    android:id="@+id/button_cancel"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="76dp"
+    android:layout_marginEnd="84dp"
+    android:layout_marginRight="84dp"
+    android:text="Cancel"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Text"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+  <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textField"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Text"
+    app:layout_constraintBottom_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
 
-    </com.google.android.material.textfield.TextInputLayout>
+  </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/textInputEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="145dp"
-        android:layout_marginBottom="141dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/button_cancel" />
+  <com.google.android.material.textfield.TextInputEditText
+    android:id="@+id/textInputEditText"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="324dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/myText"
+    app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
